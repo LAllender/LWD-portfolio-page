@@ -1,2 +1,5 @@
 # LWD-portfolio-page
-Lifestyle Web Designs portfolio page. Learn about Lifestyle Web Designs and see examples of their work.
+This is a mock-up portfolio page for Lifestyle Web Designs. 
+Discover more about the business.
+See examples of their work.
+Find out how to get in contact.
