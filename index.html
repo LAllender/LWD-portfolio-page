@@ -11,14 +11,13 @@
 
 <body>
     <header>
-      <nav class="topnav">
-        <h1>Lizzy<sub id="extra-large-emphasis">A</sub>
-        </h1>
-        <ul>
-          <li> <a href="#about-me">About Me</a></li>
-          <li> <a href="#my-work">My Work</a></li>
-          <li> <a href="#contact-me">Contact Me</a></li>
-          <li> <a href="reume.doc">Resume</a></li>
+      <nav>
+        <ul class="menu">
+          <li class="logo"><h1 href="#">Lizzy<sub id="extra-large-emphasis">A</sub></h1></li>
+          <li class="menu-item"> <a href="#about-me">About Me</a></li>
+          <li class="menu-item"> <a href="#my-work">My Work</a></li>
+          <li class="menu-item"> <a href="#contact-me">Contact Me</a></li>
+          <li class="menu-item"> <a href="reume.doc">Resume</a></li>
         </ul>
       </nav>
       <div id="decorative-bar">
@@ -28,18 +27,31 @@
     </header>
 
     <main>
-      <article id="about-me">
-        <h2>A little about Me</h2>
-
+      <article class="container">
+        <h3 class="heading" id="about-me">About Me</h3>
+        <p class="content">I am arty farty and a little bit out there. I love to travel and explore and have adventures. 
+          Throughout my travels I have met a diverse array of individuals whos truth has left an indelible mark on my life experience.
+          believe that your website should be a true reflection of you and your unique brand. 
+          Each person and business has their own personality and vibe and I like to create websites that express this! 
+          My background is in visual arts and design and I worked in the feild of visual marketing for fifteen years before making to web design.
+          My web designs are a little bit like me: a little bit out there but they tell a story and leave an impression. 
+          </p>
       </article>
       
-      <section id="my-work">
-        <h2>Some of my work</h2>
+      <section class="container">
+        <h3 class="heading" id="my-work">My Work</h3>
+        <div class="content" class="image-container">
+        <img class="main-image" src="assets/images/Storm.jpg" alt="big hurricane storm">
+        <img class="image" src="assets/images/Zen.jpg" alt="elderly couple meditating">
+        <img class="image" src="assets/images/books-old.jpg" alt="Old leatherbound books">
+        <img class="image" src="assets/images/bush-walking.jpg" alt="Mountain trail hiking">
+        <img class="image" src="assets/images/Food.jpg" alt="An array of meat and vegetables">
+        </div>
       </section>
 
-      <footer id="contact-me">
-       <h2>Get in touch</h2>
-      <ul>
+      <footer class="container">
+        <h3 class="heading" id="contact-me">Get in touch</h3>
+        <ul class="content">
           <li></li>
           <li></li>
           <li></li>

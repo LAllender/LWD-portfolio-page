@@ -1,66 +1,102 @@
 
-
-/*Add a background colour to the top navigation bar*/
-.topnav {
-    height:80px;
-    background-color: rgb(22, 14, 71);
-    overflow:hidden;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    font-family: FreeMono, monospace; 
+    font-size: 16px;
+    background-color: rgb(203, 235, 235);
+}
+
 /*style name inside top navigation bar top*/
+nav {
+    background:  rgb(22, 14, 71);
+    padding: 0 25px;
+}
+
 h1 {
-    float: left;
-    text-align: center;
-    margin-top: 10px;
-    border-right: solid 3px;
-    padding: 2px 180px 2px 180px;
-    font-family: FreeMono, monospace;
-    font-size: 30px;
-    background-color:  rgb(184, 59, 13);
-    color: whitesmoke;
+    font-size: 1.8em;
+    color:whitesmoke;
 }
 
-/*style the A in LizzyA*/
-#extra-large-emphasis {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 50px;
-    font-style: italic;
+h2 {
+    font-family: monospace;
+    font-size: 1.5em;
+    color:  rgb(22, 14, 71);
 }
 
-/*style the links inside the top navigation bar*/
-.topnav a {
-   
-    float:right; /*fix reverse order of list items!!!*/
-    color: whitesmoke;
-    text-align: center;
-    font-family: FreeMono, monospace;
-    margin-top: 15px;
-    padding: 16px 16px;
+h3 {
+    font-family: monospace;
+    font-size: 1.5em;
+    color:  rgb(184, 59, 13);
+}
+
+p {
+    font-family:'Courier New', Courier, monospace
+    font-size: 1em;
+    color: rgb(22, 14, 71);
+}
+
+a {
+    color:whitesmoke;
     text-decoration: none;
-    font-size: 20px;
-   
 }
 
-/*Change the colour of links on hover in the top navigation bar*/
-.topnav a:hover {
+main {
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;  
+    align-items: flex-start;
+    flex-wrap: nowrap;  
+}
+
+.logo {
+    order: 0;
+    display: inline-block;
+    flex-grow: 18;
+}
+
+.menu-item {
+    order: 1;
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.menu-item a:hover {
     background-color: rgb(184, 59, 13);
     color:  rgb(22, 14, 71);
 }
 
- /*Create decorative bar below top navigation bar*/
-#decorative-bar {
-    position: relative;
-    text-align:center;
-    color: white;
+
+/*style the A in LizzyA */
+#extra-large-emphasis {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    color:  rgb(184, 59, 13);
 }
 
+
 /*style subheading in decorative bar*/
+#decorative-bar {
+    position: relative;
+}
+
 #decorative-bar h2 {
-    height: 40%;
-    position:absolute;
+    position: absolute;
     border-left: solid 3px;
-    padding: 10px 130px 10px 130px;
+    padding: 10px 30px 10px 30px;
     font-family: FreeMono, monospace;
-    font-size: 22px;
+    font-size: 1.5em;
     font-style: italic; 
     top: 35%;
     right: 0;
@@ -68,12 +104,40 @@ h1 {
     color: whitesmoke;
 }
 
-/* define a left margin for main content*/
-
-main {
-    margin-left: 10%;
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
 }
 
-h2 {
+.heading {
+    flex: 1 0 20px;
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+    text-align: right;
+    border-style: none;
+    border-width: 1px;
+}
 
+.content {
+    flex: 4 0 200px;
+    padding: 20px;
+    text-align: left;
+    border-left: solid 3px rgb(184, 59, 13);
+    margin: 10px;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.main-image {
+    display: block;
+    flex-grow: 1;
+    align-items: center;
+    block-size: 80%;
+    margin:0 0 5% 20%;
+    border: 2px solid rgb(184, 59, 13); 
 }
