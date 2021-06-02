@@ -1,0 +1,79 @@
+
+
+/*Add a background colour to the top navigation bar*/
+.topnav {
+    height:80px;
+    background-color: rgb(22, 14, 71);
+    overflow:hidden;
+}
+/*style name inside top navigation bar top*/
+h1 {
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    border-right: solid 3px;
+    padding: 2px 180px 2px 180px;
+    font-family: FreeMono, monospace;
+    font-size: 30px;
+    background-color:  rgb(184, 59, 13);
+    color: whitesmoke;
+}
+
+/*style the A in LizzyA*/
+#extra-large-emphasis {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+}
+
+/*style the links inside the top navigation bar*/
+.topnav a {
+   
+    float:right; /*fix reverse order of list items!!!*/
+    color: whitesmoke;
+    text-align: center;
+    font-family: FreeMono, monospace;
+    margin-top: 15px;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+
+/*Change the colour of links on hover in the top navigation bar*/
+.topnav a:hover {
+    background-color: rgb(184, 59, 13);
+    color:  rgb(22, 14, 71);
+}
+
+ /*Create decorative bar below top navigation bar*/
+#decorative-bar {
+    position: relative;
+    text-align:center;
+    color: white;
+}
+
+/*style subheading in decorative bar*/
+#decorative-bar h2 {
+    height: 40%;
+    position:absolute;
+    border-left: solid 3px;
+    padding: 10px 130px 10px 130px;
+    font-family: FreeMono, monospace;
+    font-size: 22px;
+    font-style: italic; 
+    top: 35%;
+    right: 0;
+    background-color: rgb(22, 14, 71);
+    color: whitesmoke;
+}
+
+/* define a left margin for main content*/
+
+main {
+    margin-left: 10%;
+}
+
+h2 {
+
+}
