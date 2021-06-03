@@ -8,7 +8,8 @@
 body {
     font-family: FreeMono, monospace; 
     font-size: 16px;
-    background-color: rgb(203, 235, 235);
+    color: black;
+    background-color: whitesmoke;
 }
 
 /*style name inside top navigation bar top*/
@@ -25,7 +26,6 @@ h1 {
 h2 {
     font-family: monospace;
     font-size: 1.5em;
-    color:  rgb(22, 14, 71);
 }
 
 h3 {
@@ -34,10 +34,18 @@ h3 {
     color:  rgb(184, 59, 13);
 }
 
-p {
-    font-family:'Courier New', Courier, monospace
+h4 {
+    font-family: monospace;
     font-size: 1em;
-    color: rgb(22, 14, 71);
+    color:  rgb(184, 59, 13);
+    background-color: whitesmoke;
+    border: solid 1px  rgb(22, 14, 71);
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    color:  rgb(22, 14, 71);
 }
 
 a {
@@ -46,10 +54,18 @@ a {
 }
 
 main {
-    margin-left: 1%;
+    margin-left: 2%;
     margin-right: 3%;
 }
 
+footer {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    color:black;
+}
+footer a {
+    color: black;;
+}
 .menu {
     display: flex;
     justify-content: space-between;  
@@ -76,7 +92,6 @@ main {
     color:  rgb(22, 14, 71);
 }
 
-
 /*style the A in LizzyA */
 #extra-large-emphasis {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -84,7 +99,6 @@ main {
     font-style: italic;
     color:  rgb(184, 59, 13);
 }
-
 
 /*style subheading in decorative bar*/
 #decorative-bar {
@@ -104,6 +118,22 @@ main {
     color: whitesmoke;
 }
 
+#main {
+    position: relative;
+    text-align: center;
+    height: 15em;
+    width: 55em;
+    border: solid 2px  rgb(184, 59, 13);
+}
+
+.sub {
+    display: inline;
+    height: 10em;
+    width: 40%;
+    border: solid 2px  rgb(184, 59, 13);
+    margin: 1em 1em 0 0;  
+}
+
 .container {
     display: flex;
     position: relative;
@@ -113,7 +143,6 @@ main {
 .heading {
     flex: 1 0 20px;
     padding: 10px 20px 10px 10px;
-    align-self: center;
     text-align: right;
     border-style: none;
     border-width: 1px;
@@ -121,23 +150,13 @@ main {
 
 .content {
     flex: 4 0 200px;
-    padding: 20px;
+    padding: 0 100px 10px 100px;
     text-align: left;
     border-left: solid 3px rgb(184, 59, 13);
-    margin: 10px;
+    margin: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:whitesmoke;
 }
-
-.image-container {
-    display: flex;
-    position: relative;
-    text-align: center;
-}
-
-.main-image {
-    display: block;
-    flex-grow: 1;
-    align-items: center;
-    block-size: 80%;
-    margin:0 0 5% 20%;
-    border: 2px solid rgb(184, 59, 13); 
+.content ul{
+    color: black;
 }
